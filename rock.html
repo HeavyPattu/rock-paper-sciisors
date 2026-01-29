@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <p class="title">ROCK PAPER SCISSORS</p>
+    <div class="player">
+        <div>You
+            <div id="playimg">
+                <button onclick="r('rock')">Rock</button>
+                <button onclick="r('paper')">Paper</button>
+                <button onclick="r('scis')">Scissor</button>
+          
+            </div>
+        </div>
+        <div>v/s</div>
+        <div>Computer
+            <div id="compimg"><img id="comp" src="rock.png"  width="300" height="250"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <p id="winner"></p>
+    </div>
+     <button id="pb" onclick="op()"></button>
+
+     <footer>
+<div>WIN:
+    <span id="w">0</span>
+</div>
+<div>LOSE:
+    <span id="l">0</span>
+</div>
+<div>DRAW:
+    <span id="d">0</span>
+</div>
+
+     </footer>
+        
+</body>
+<script src="rock.js"></script>
+</html>
